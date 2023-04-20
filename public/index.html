@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Verdens beste app</title>
+</head>
+<body>
+<!-- Jeg er ikke ferdig med front end, mangler et script som bestemmer hva som skjer i "front-end" -->
+
+    <h1>Nettbutikk</h1>
+
+    <main>
+        <h2>Legg til bruker</h2>
+        <form id="bruker-form">
+            <label for="fornavn">Fornavn</label>
+            <input type="text" id="fornavn" required>
+
+            <label for="etternavn">Etternavn</label>
+            <input type="text" id="etternavn" required>
+
+            <label for="e-post">E-post</label>
+            <input type="email" id="e-post" required>
+
+            <label for="passord">Passord</label>
+            <input type="password" id="passord" required>
+
+            <button type="submit">Legg til bruker</button>
+        </form>
+        <h2>Brukerliste</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fornavn</th>
+                    <th>Etternavn</th>
+                    <th>E-post</th>
+                    <th>Passord</th>
+                </tr>
+            </thead>
+            <tbody id="bruker-list"></tbody>
+        </table>
+
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
